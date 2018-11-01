@@ -1,0 +1,14 @@
+{
+  "name": "mystar",
+  "version": "1.0.0",
+  "description": "My own sStar System!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Sky Hoffert",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^3.0.7"
+  }
+}
