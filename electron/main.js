@@ -5,7 +5,7 @@ const electron = require('electron');
 const url = require('url');
 const path = require('path');
 
-const {app, BrowserWindow, Menu} = electron;
+const {app, BrowserWindow, Menu, remote} = electron;
 
 let mainWindow;
 
@@ -13,8 +13,11 @@ let mainWindow;
 app.on('ready', function(){
     // create the main window
     mainWindow = new BrowserWindow({
+        minWidth: 960,
+        minHeight: 540,
         width: 1024,
-        height: 720
+        height: 576,
+        icon: path.join(__dirname, 'gfx/logo.png')
     });
 
     // load html into window
