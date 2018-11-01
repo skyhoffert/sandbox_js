@@ -5,14 +5,17 @@ const electron = require('electron');
 const url = require('url');
 const path = require('path');
 
-const {app, BrowserWindow} = electron;
+const {app, BrowserWindow, Menu} = electron;
 
 let mainWindow;
 
 // listen for app to be ready
 app.on('ready', function(){
     // create the main window
-    mainWindow = new BrowserWindow({});
+    mainWindow = new BrowserWindow({
+        width: 1024,
+        height: 720
+    });
 
     // load html into window
     mainWindow.loadURL(url.format({
@@ -20,4 +23,7 @@ app.on('ready', function(){
         protocol: 'file:',
         slashes: true
     }));
+
+    // remove the default menu
+    Menu.setApplicationMenu(null);
 });
