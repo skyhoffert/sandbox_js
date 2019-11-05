@@ -1,0 +1,17 @@
+{
+  "name": "synth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "synth.js",
+  "dependencies": {
+    "connect": "^3.7.0",
+    "mime": "^1.6.0",
+    "serve-static": "^1.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
